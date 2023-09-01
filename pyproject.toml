@@ -1,0 +1,25 @@
+[project]
+name = "sqlite-utils-move-tables"
+version = "0.1"
+description = "Command for sqlite-utils to move tables from one database to another"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "sqlite-utils"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/sqlite-utils-move-tables"
+Changelog = "https://github.com/simonw/sqlite-utils-move-tables/releases"
+Issues = "https://github.com/simonw/sqlite-utils-move-tables/issues"
+CI = "https://github.com/simonw/sqlite-utils-move-tables/actions"
+
+[project.entry-points.sqlite_utils]
+move_tables = "sqlite_utils_move_tables"
+
+[project.optional-dependencies]
+test = ["pytest"]
